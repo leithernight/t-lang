@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: 'Playfair Display SC', serif !important
+}
+
+nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    box-shadow: none;
+    z-index: 5;
+    height: 80px
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    height: 80px
+}
+
+nav .nav-container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-container .links a {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    color: #414141;
+    border-radius: 5px;
+}
+
+nav .nav-container .links a img {
+    width: 30px;
+    height: auto
+}
+
+nav .nav-container .links a:hover {
+    color: #fff;
+    background-color: #8ca596;
+    transition: .25s ease-in-out
+}
+
+nav .nav-container .links .links_hide {
+    display: none
+}
+
+.logo {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    color: #414141;
+    gap: 10px;
+    font-weight: 300;
+    font-size: 16pt
+}
+
+.logo img {
+    width: 50px;
+    height: 50px
+}
+
+.container {
+    max-width: none
+}
+
+.banner {
+    width: 100%;
+    z-index: 0
+}
+
+.banner .banner_text {
+    position: absolute;
+    top: 15vh;
+    left: 10vw
+}
+
+.banner .banner_text p {
+    font-size: 16pt
+}
+
+.banner .carousel {
+    max-height: 100vh !important
+}
+
+nav .brand-logo {
+    position: relative
+}
+
+.prefs {
+    margin: 3.75% 10%
+}
+
+.prefs h2 {
+    text-align: center;
+    font-size: 26pt;
+    margin: 3.75%
+}
+
+.prefs .grid_prefs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto
+}
+
+.prefs .grid_prefs .pref_cell {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center
+}
+
+.prefs .grid_prefs .pref_cell h3 {
+    font-size: 20pt
+}
+
+.prefs .grid_prefs .pref_cell img {
+    width: 75px;
+    height: 75px
+}
+
+.prefs .grid_prefs .pref_cell p {
+    margin-bottom: 7.5%
+}
+
+.articles h2 {
+    margin: 5% 10%
+}
+
+.articles article {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: #fff
+}
+
+.articles article img {
+    height: 100%
+}
+
+.articles article .article_text {
+    margin-left: 10%;
+    width: 50%
+}
+
+.articles article .article_text p {
+    margin-bottom: 2.5%;
+    font-size: 14pt
+}
+
+.articles article .article_text #date {
+    margin-top: 2.5%;
+    font-size: 12pt;
+    color: #949494
+}
+
+.articles article .article_text a {
+    font-size: 14pt;
+    color: #8ca596
+}
+
+.articles article .article_text a:hover {
+    color: #b8d7c4;
+    transition: .25s ease-in-out
+}
+
+.articles .parallax-container {
+    height: 250px;
+    margin: 0
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    grid-gap: 50px
+}
+
+.gallery img {
+    width: 19.5vw
+}
+
+.modals .modal {
+    height: 80vh !important;
+    max-height: 100vh !important;
+    width: 90% !important
+}
+
+.modals .modal .modal-content {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px
+}
+
+.modals .modal .modal-content img {
+    height: 69vh
+}
+
+.modals .modal .modal-footer {
+    position: absolute;
+    bottom: 10px
+}
+
+.mail_form {
+    margin: 5% 10%
+}
+
+.mail_form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px
+}
+
+.mail_form a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #8ca596;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.mail_form a:hover {
+    color: #000;
+    transition: .25s ease-in-out
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #8ca596
+}
+
+footer .ftr {
+    display: flex;
+    padding: 2.5% 10%;
+    justify-content: space-between;
+    align-items: center
+}
+
+footer .ftr .links {
+    display: flex;
+    flex-direction: column
+}
+
+footer .ftr .links div {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+footer .ftr .links img {
+    width: 20px;
+    height: auto
+}
+
+footer .ftr .links a {
+    color: #8ca596
+}
+
+footer .ftr .links a:hover {
+    color: #000;
+    transition: .25s ease-in-out
+}
+
+footer .ftr .rights {
+    text-align: right
+}
+
+.translate {
+    width: 30px;
+    margin-right: 30px;
+    height: 30px;
+    align-items: center;
+    justify-self: center;
+}
+
+.translate:hover {
+    opacity: 0.5;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}

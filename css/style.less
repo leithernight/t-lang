@@ -1,0 +1,250 @@
+@text_color: rgb(65, 65, 65);
+@hover_color: rgb(140, 165, 150);
+@hover_text_color: #fff;
+@bc_color: #fff;
+@link_color: rgb(184, 215, 196);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Playfair Display SC', serif !important;
+}
+
+nav {
+    background: @bc_color;
+    position: fixed;
+    top: 0;
+    box-shadow: none;
+    z-index: 5;
+    height: 80px;
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10%;
+        height: 80px;
+        .links {
+            display: flex;
+            a {
+                display: flex;
+                align-items: center;    
+                padding: 0 25px;
+                color: @text_color; 
+                border-radius: 5px;
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+                &:hover {
+                    color: @hover_text_color;
+                    background-color: @hover_color;
+                    transition: 0.25s ease-in-out;
+                }  
+            }
+
+            .links_hide {
+                display: none;
+            }
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    color: @text_color;
+    gap: 10px;
+    font-weight: 300;
+    font-size: 16pt;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.container {
+    max-width: none;
+}
+
+.banner {
+    width: 100%;
+    z-index: 0;
+    .banner_text {
+        position: absolute;
+        top: 15vh;
+        left: 10vw;
+        p {
+            font-size: 16pt;
+        }
+        
+    }
+    .carousel {
+        max-height: 100vh !important;
+    }
+}
+
+nav .brand-logo {
+    position: relative;
+}
+
+.prefs {
+    margin: 3.75% 10%;
+    h2 {
+        text-align: center;
+        font-size: 26pt;
+        margin: 3.75%;
+    }
+    .grid_prefs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        .pref_cell {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            h3 {
+                font-size: 20pt;
+            }
+            img {
+                width: 75px;
+                height: 75px;
+            }
+            p {
+                margin-bottom: 7.5%;
+            }
+        }
+    }
+}
+
+.articles {
+    h2 {
+        margin: 5% 10%;
+    }
+    article {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        height: 50vh;
+        img {
+            height: 100%;
+        }
+        background-color: @bc_color;
+        .article_text {
+            margin-left: 10%;
+            width: 50%;
+            p {
+                margin-bottom: 2.5%;
+                font-size: 14pt;
+            }
+            #date {
+                margin-top: 2.5%;
+                font-size: 12pt;
+                color: rgb(148, 148, 148);
+            }
+            a {
+                font-size: 14pt;
+                color: @hover_color;
+                &:hover {
+                    color: @link_color;
+                    transition: 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+    .parallax-container {
+        height: 250px;
+        margin: 0 0;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    grid-gap: 50px;
+    img {
+        width: 19.5vw;
+    }
+}
+
+.modals {
+    .modal {
+        height: 80vh !important;
+        max-height: 100vh !important;
+        width: 90% !important;
+        .modal-content {
+            display: flex !important;
+            flex-direction: row;
+            gap: 20px;
+            img {
+                height: 69vh;
+            }
+        }
+        .modal-footer {
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+}
+
+.mail_form {
+    margin: 5% 10%;
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        color: @hover_color;
+        font-size: 20pt;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            color: #000;
+            transition: 0.25s ease-in-out;
+        }
+    }
+}
+
+footer {
+    hr {
+        border: none;
+        border-top: 1px solid @hover_color;
+    }
+    .ftr {
+        display: flex;
+        padding: 2.5% 10%;
+        justify-content: space-between;
+        align-items: center;
+        .links {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            img {
+                width: 20px;
+                height: auto;
+            }
+            a {
+                color: @hover_color;
+                &:hover {
+                    color: #000;
+                    transition: 0.25s ease-in-out;
+                }
+            }
+        }
+        .rights { 
+            text-align: right; 
+        }
+    }
+}

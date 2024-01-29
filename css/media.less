@@ -1,0 +1,328 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    nav {
+        height: 60px;
+        .nav-container {
+            margin: 0 5%;
+            height: 60px;
+        }
+    }
+
+    .logo {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .banner {
+        .banner_text {
+            top: 10vh;
+            p {
+                font-size: 14pt;
+            }
+            h1 {
+                font-size: 34pt;
+            }
+        }
+    }
+
+    .prefs {
+        margin: 5%;
+        h2 {
+            font-size: 20pt;
+        }
+        .grid_prefs {
+            .pref_cell {
+                h3 {
+                    margin-top: 4%;
+                    font-size: 16pt;
+                }
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+                p {
+                    margin-bottom: 7.5%;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        h2 {
+            font-size: 30pt;
+        }
+        p {
+            font-size: 12pt;
+        }
+        margin: 5%;
+        grid-gap: 20px;
+        img {
+            width: 22.1vw;
+        }
+    }
+
+    .articles {
+        h2 {
+            margin: 5%;
+            font-size: 30pt;
+        }
+        article {
+            height: 40vh;
+            .article_text {
+                margin-left: 5%;
+                width: 50%;
+                h3 {
+                    font-size: 26pt;
+                }
+                p {
+                    font-size: 12pt;
+                }
+                #date {
+                    font-size: 10pt;
+                }
+                a {
+                    font-size: 12pt;
+                }
+            }
+        }
+        .parallax-container {
+            height: 250px;
+            margin: 0 0;
+        }
+    }
+
+    .mail_form {
+        margin: 5%;
+        h2 {
+            font-size: 30pt;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        height: 50px;
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 5%;
+            height: 50px;
+            .links {
+                display: flex;
+                a {
+                    display: flex;
+                    align-items: center;    
+                    padding: 0 25px; 
+                    border-radius: 5px;
+                    img {
+                        width: 30px;
+                        height: auto;
+                    }
+                    &:hover {
+                        transition: 0.25s ease-in-out;
+                    }  
+                }
+                .links_full {
+                    display: none;
+                }
+            
+                .links_hide {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .banner {
+        .banner_text {
+            position: absolute;
+            top: 5vh;
+            left: 5vw;
+            p {
+                font-size: 12pt;
+            }
+            h1 {
+                font-size: 30pt;
+                margin-bottom: 2.5%;
+            }
+        }
+        .carousel {
+            max-height: 100vh !important;
+        }
+    }
+
+    .prefs {
+        margin: 5%;
+        h2 {
+            font-size: 24pt;
+            margin-bottom: 10%;
+        }
+        .grid_prefs {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            .pref_cell {
+                margin: 0 auto;
+                width: 80%;
+                text-align: center;
+                h3 {
+                    font-size: 20pt;
+                }
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+                p {
+                    margin-bottom: 7.5%;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        grid-gap: 50px;
+        h2 {
+            font-size: 26pt;
+        }
+        img {
+            width: 29.5vw;
+        }
+        .gallery-grid {
+            #fourth {
+                display: none;
+            }
+        }
+    }
+
+    .articles {
+        h2 {
+            margin: 5%;
+            font-size: 26pt;
+        }
+        article {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 520px;
+            img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+            }
+            .article_text {
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 80%;
+                p {
+                    font-size: 14pt;
+                }
+                h3 {
+                    font-size: 22pt;
+                }
+                #date {
+                    margin-top: 2.5%;
+                    font-size: 12pt;
+                    color: rgb(148, 148, 148);
+                }
+                a {
+                    font-size: 14pt;
+                    &:hover {
+                        transition: 0.25s ease-in-out;
+                    }
+                }
+            }
+        }
+        .parallax-container {
+            height: 250px;
+            margin: 0 0;
+        }
+    }
+    
+    footer {
+        .ftr {
+            gap: 50px;
+            .rights {
+                div {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .modals {
+        .modal {
+            height: 80vh !important;
+            max-height: 100vh !important;
+            width: 90% !important;
+            .modal-content {
+                display: flex !important;
+                flex-direction: column;
+                gap: 20px;
+                img {
+                    height: 40vh;
+                    object-fit: cover;
+                }
+            }
+            .modal-footer {
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+    }
+
+    .mail_form {
+        margin: 5%;
+        h2 {
+            font-size: 26pt;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        grid-gap: 50px;
+        h2 {
+            font-size: 26pt;
+        }
+        img {
+            width: 90vw;
+        }
+        .gallery-grid {
+            #third {
+                display: none;
+            }
+            #fourth {
+                display: none;
+            }
+        }
+    }
+
+    .mail_form {
+        h2 {
+            font-size: 6vw;
+        }
+        a {
+            font-size: 4vw;
+        }
+    }
+}
